@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest version="2.0" type="device" target-level="7">
+
+    <!-- Boot control -->
+    <hal format="hidl">
+        <name>android.hardware.boot</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IBootControl/default</fqname>
+    </hal>
+
+    <!-- Gatekeeper -->
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+
+    <!-- Audio -->
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@6.0::IDevicesFactory/default</fqname>
+    </hal>
+
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@6.0::IEffectsFactory/default</fqname>
+    </hal>
+
+    <!-- Bluetooth -->
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IBluetoothHci/default</fqname>
+    </hal>
+
+    <!-- USB -->
+    <hal format="hidl">
+        <name>android.hardware.usb</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IUsb/default</fqname>
+    </hal>
+
+    <!-- Graphics allocator -->
+    <hal format="hidl">
+        <name>android.hardware.graphics.allocator</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IAllocator/default</fqname>
+    </hal>
+
+    <!-- Graphics mapper: minigbm passthrough implementation -->
+    <hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@4.0::IMapper/default</fqname>
+    </hal>
+
+    <!-- DRM/KMS Hardware Composer -->
+    <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.4::IComposer/default</fqname>
+    </hal>
+
+    <hal format="aidl">
+        <name>android.hardware.health</name>
+        <version>1</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <hal format="hidl">
+        <name>android.hardware.thermal</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+</manifest>

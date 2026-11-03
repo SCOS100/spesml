@@ -1,0 +1,2 @@
+/dev/dri/card*       0660   system   graphics
+/dev/dri/renderD*    0660   system   graphics
